@@ -12,4 +12,10 @@ class PushBriefMail extends Mailable
     use Queueable, SerializesModels;
 
     public function __construct(public string $report) {}
+
+    public function build()
+    {
+        return $this->subject('Push Brief Report')
+            ->view('emails.push-brief', ['report' => $this->report]);
+    }
 }
