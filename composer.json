@@ -1,0 +1,15 @@
+{
+    "name": "user/test-repo",
+    "autoload": {
+        "psr-4": {
+            "User\\TestRepo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ahmet Barut",
+            "email": "ahmetbarut588@gmail.com"
+        }
+    ],
+    "require": {}
+}
