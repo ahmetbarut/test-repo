@@ -2,6 +2,7 @@ languages:
   php:
     standards:
       - PSR-12
+      - Laravel
     custom_rules:
       - rule_name: no_unused_imports
         description: "Remove unused imports."
@@ -9,27 +10,8 @@ languages:
         description: "Ensure that all methods have consistent return types."
     extensions:
       - "php-cs-fixer"
-  javascript:
-    standards:
-      - Airbnb
-    custom_rules:
-      - rule_name: no_console
-        description: "Disallow the use of console.log."
-      - rule_name: eqeqeq
-        description: "Require the use of === and !==."
-    extensions:
-      - "eslint"
-  python:
-    standards:
-      - PEP8
-    custom_rules:
-      - rule_name: no_unused_imports
-        description: "Remove unused imports."
-      - rule_name: flake8
-        description: "Ensure flake8 compliance."
-    extensions:
-      - "flake8"
-
+      - "phpstan"
+      - "phpmd"
 general_settings:
   max_line_length: 120
   ignore_paths:
